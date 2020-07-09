@@ -1,0 +1,22 @@
+<p>
+  <strong>Subject:</strong>
+  <%= @inquiry.subject %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%= @inquiry.description %>
+</p>
+
+<p>
+  <strong>Customer ID:</strong>
+  <%= @inquiry.customer_id %>
+</p>
+
+<p>
+  <strong>Admin ID:</strong>
+  <%= @inquiry.admin_id %>
+</p>
+
+<%= link_to 'Edit', edit_inquiry_path(@inquiry) %> 
+<%= link_to 'Back', inquirys_path %>

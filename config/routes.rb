@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  #Route for index 
   get 'welcome/index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  
+  resources :inquirys
+
+  #Define landing index route
+  root 'welcome#index'
+
 end

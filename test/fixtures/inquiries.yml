@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subject: MyString
+  inquiry: MyString
+  customer_id: 1
+  admin_id: 1
+  status: 1
+
+two:
+  subject: MyString
+  inquiry: MyString
+  customer_id: 1
+  admin_id: 1
+  status: 1
