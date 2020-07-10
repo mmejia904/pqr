@@ -18,5 +18,12 @@
   <%= @inquiry.admin_id %>
 </p>
 
+#Comments sections
+<h2>FollowUps</h2>
+<%= render @inquiry.followups %>
+
+<h2>Add FollowUp:</h2>
+<%= render 'followups/form' %>
+
 <%= link_to 'Edit', edit_inquiry_path(@inquiry) %> 
 <%= link_to 'Back', inquiries_path %>

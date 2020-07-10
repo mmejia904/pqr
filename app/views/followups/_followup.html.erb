@@ -1,0 +1,14 @@
+
+<p>
+  <strong>FollowUp:</strong>
+  <%= followup.commenter %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= followup.body %>
+</p>
+
+<p>
+  <%= link_to 'Delete FollowUp', [followup.inquiry, followup], method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>

@@ -16,13 +16,9 @@
       <td><%= inquiry.description %></td>
       <td><%= inquiry.customer_id %></td>
       <td><%= inquiry.admin_id %></td>
-      <td><%= link_to 'Show', inquiries_path(inquiry) %></td>
+      <td><%= link_to 'Show', inquiry_path(inquiry) %></td>
       <td><%= link_to 'Edit', edit_inquiry_path(inquiry) %></td>
       <td><%= link_to 'Destroy', inquiry_path(inquiry), method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
-
-
-
-
