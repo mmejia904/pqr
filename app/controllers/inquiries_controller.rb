@@ -1,4 +1,4 @@
-class InquirysController < ApplicationController
+class InquiriesController < ApplicationController
   def index
     @inquiry = Inquiry.all
   end
@@ -39,7 +39,7 @@ class InquirysController < ApplicationController
     @inquiry = Inquiry.find(params[:id])
     @inquiry.destroy
 
-    redirect_to inquirys_path
+    redirect_to inquiries_path
   end
 
   private

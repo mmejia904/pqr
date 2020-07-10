@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_07_195046) do
+ActiveRecord::Schema.define(version: 2020_07_09_205431) do
+
+  create_table "followups", force: :cascade do |t|
+    t.string "commenter"
+    t.text "body"
+    t.integer "inquiry_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["inquiry_id"], name: "index_followups_on_inquiry_id"
+  end
 
   create_table "inquiries", force: :cascade do |t|
     t.string "subject"
@@ -22,4 +31,5 @@ ActiveRecord::Schema.define(version: 2020_07_07_195046) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "followups", "inquiries"
 end
